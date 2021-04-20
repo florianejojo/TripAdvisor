@@ -1,0 +1,52 @@
+/* GENERAL RULES */
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+}
+
+.container {
+    width: 1040px;
+    margin: 0 auto;
+    /* border: black 3px solid; */
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    line-height: 60px;
+    justify-content: space-between;
+    border-bottom: tomato solid 1px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 186px;
+    border: pink 3px solid;
+}
+
+header nav {
+    font-weight: bold;
+    display: flex;
+    width: 430px;
+    border: olive 1px solid;
+    justify-content: space-between;
+}
+header nav i {
+    border: purple 1px solid;
+    align-items: center;
+}
+
+header nav i:last-child {
+    display: flex;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    height: 40px;
+    align-items: center;
+}
