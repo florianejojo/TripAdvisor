@@ -1,5 +1,6 @@
+/* --------- */
 /* GENREAL RULES */
-
+/* --------- */
 body {
     font-family: "Trip Sans";
     font-size: 16px;
@@ -8,9 +9,9 @@ body {
     width: 1140px;
     margin: 0 auto;
 }
-
+/* --------- */
 /* HEADER*/
-
+/* --------- */
 header {
     display: flex;
     justify-content: space-between;
@@ -58,8 +59,9 @@ header button {
     font-family: inherit;
     font-size: inherit;
 }
-
+/* --------- */
 /* TITRES */
+/* --------- */
 
 h1 {
     font-size: 54px;
@@ -71,8 +73,9 @@ h1 {
 h1 .city {
     color: black;
 }
-
+/* --------- */
 /* MENU */
+/* --------- */
 
 .menu {
     margin-top: 20px;
@@ -105,4 +108,38 @@ h1 .city {
     text-overflow: ellipsis;
     line-height: 22px;
     font-weight: bold;
+}
+
+/* --------- */
+/* PICTURES */
+/* --------- */
+.pictures {
+    height: 430px;
+    margin-top: 30px;
+    display: flex;
+    object-fit: cover;
+}
+
+.pictures .col-left {
+    width: 60%;
+    margin-right: 3px;
+    background-image: url("../img/belfast_picture1.jpeg");
+    background-position: center;
+}
+
+.pictures .col-right {
+    width: 40%;
+}
+
+.pictures .col-right .up {
+    height: 50%;
+    margin-bottom: 3px;
+    background-image: url("../img/belfast_picture2.jpeg");
+    background-position: center;
+}
+
+.pictures .col-right .down {
+    height: calc(50% - 3px);
+    background-image: url("../img/belfast_picture3.jpeg");
+    background-position: bottom;
 }
