@@ -2,7 +2,71 @@
 
 body {
     font-family: "Trip Sans";
-    font-size: 20px;
+    font-size: 16px;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
 }
 
 /* HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: pink;
+}
+
+header img {
+    height: 42px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav div,
+button {
+    padding: 10px 20px;
+}
+
+header nav div:hover {
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+/* margin de 20 entre les blocks icone + text */
+header nav div:not(:last-child) {
+    /* background-color: yellow; */
+    margin-right: 20px;
+}
+/* margin de 10 à droite de chaque icone dans le block*/
+header nav div i {
+    margin-right: 20px;
+}
+
+header button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* TITRES */
+
+h1 {
+    font-size: 54px;
+    color: #ff5d5d;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+h1 .city {
+    color: black;
+}
