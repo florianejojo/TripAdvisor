@@ -98,10 +98,16 @@ header button {
 /* MENU */
 /* --------- */
 
-.menu {
+/* .menu {
     display: flex;
     margin-top: 20px;
     flex-wrap: wrap;
+} */
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 20px;
 }
 
 .menu div {
@@ -126,9 +132,9 @@ header button {
     background-color: yellow;
 }
 
-.menu div:not(:nth-child(1)) {
+/* .menu div:not(:nth-child(1)) {
     margin-left: 15px;
-}
+} */
 
 .menu .hidden {
     display: none;
@@ -327,19 +333,20 @@ a:active {
         height: 35px;
     }
     .menu {
-        display: grid;
+        /* display: grid; */
+        /* répéter 4 fois la boxe flexible */
         grid-template-columns: repeat(4, 1fr);
-        /* grid-gap: 5px; */
+        /* grid-gap: 20px; */
         /* box-sizing: border-box; */
     }
 
     .menu .hidden {
-        display: inherit;
+        display: flex;
     }
-    .menu :nth-child(4) {
+    /* .menu :nth-child(4) {
         background-color: lawngreen;
         margin-right: 0;
-    }
+    } */
     .menu div span {
         width: 110px;
     }
@@ -353,7 +360,7 @@ a:active {
         justify-content: space-between;
     }
     h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     header nav {
