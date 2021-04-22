@@ -1,13 +1,21 @@
 /* --------- */
 /* GENREAL RULES */
 /* --------- */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Trip Sans";
     font-size: 16px;
 }
 .container {
     width: 1140px;
-    margin: 0 auto;
+    margin: 10px auto;
+}
+
+.hidden {
+    display: none;
 }
 
 /* --------- */
@@ -45,8 +53,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
-    /* background-color: pink; */
 }
 
 header img {
@@ -55,7 +61,6 @@ header img {
 
 header nav {
     display: flex;
-    /* justify-content: space-between; */
 }
 
 header nav div,
@@ -255,9 +260,39 @@ a:active {
     height: 45%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-
-.infoMap .block_right .down {
     background-image: url("../img/belfast_map.png");
     background-size: cover;
+}
+/* ----------------------------------------  */
+/* <!-- IMMANQUABLES CARROUSEL  --> */
+/* ----------------------------------------  */
+
+/* ---------- */
+/* RESPONSIVE */
+/* ---------- */
+
+@media (max-width: 1024px) {
+    header nav div span {
+        background-color: blue;
+        display: none;
+    }
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    header img {
+        height: 35px;
+    }
+}
+@media (max-width: 768px) {
+    header div {
+        display: inherit;
+    }
+    header {
+        justify-content: space-between;
+    }
+
+    header nav {
+        display: none;
+    }
 }
