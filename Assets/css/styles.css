@@ -110,6 +110,7 @@ header button {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    width: calc(100% / 4 - (45px / 4));
 }
 
 .menu div i {
@@ -125,12 +126,13 @@ header button {
 }
 
 .menu div span {
-    margin-right: 10px;
-    max-width: 80px;
+    margin-right: 10%;
+    max-width: 100%;
     overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 22px;
+    text-overflow: hidden;
+    /* line-height: 22px; */
     font-weight: bold;
+    background-color: lightcoral;
 }
 
 /* --------- */
@@ -283,7 +285,14 @@ a:active {
     header img {
         height: 35px;
     }
+    .menu div span {
+        min-width: 100px;
+    }
+    .menu {
+        flex-wrap: wrap;
+    }
 }
+
 @media (max-width: 768px) {
     .hidden {
         display: inherit;
@@ -291,8 +300,20 @@ a:active {
     header {
         justify-content: space-between;
     }
+    h1 {
+        font-size: 40px;
+    }
 
     header nav {
         display: none;
     }
+    .menu {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+    /* .menu .resp {
+        text-overflow: hidden;
+    } */
 }
