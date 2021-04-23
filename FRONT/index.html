@@ -16,6 +16,7 @@
             crossorigin="anonymous"
         ></script>
         <script src="./Assets/js/main.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
 
     <body>
@@ -30,7 +31,9 @@
             <input type="email" placeholder="Email" id="email" />
             <input type="text" placeholder="Sujet" id="message" />
             <textarea placeholder="Ecrivez votre message ici..."></textarea>
-            <button class="container">Envoyer le message</button>
+            <button id="formButton" class="container">
+                Envoyer le message
+            </button>
             <!-- <input type="submit" value="Envoyer le message" /> -->
             <!-- </div> -->
         </div>
@@ -51,7 +54,7 @@
                     <div><i class="fas fa-pen"></i><span>Avis</span></div>
                     <div><i class="far fa-bell"></i><span>Alertes</span></div>
                     <div><i class="far fa-heart"></i><span>Favoris</span></div>
-                    <button id="formButton">Connectez-vous</button>
+                    <button id="headerButton">Nous-contacter</button>
                 </nav>
             </header>
 
