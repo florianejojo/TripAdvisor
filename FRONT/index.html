@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>🧳 TripAdvisor 🧳</title>
+
+        <link rel="stylesheet" href="./Assets/css/reset.css" />
+        <link rel="stylesheet" href="./Assets/css/styles.css" />
+        <link rel="stylesheet" href="./Assets/css/fonts.css" />
+
+        <script
+            src="https://kit.fontawesome.com/a2957b528d.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./Assets/js/main.js"></script>
+    </head>
+
+    <body>
+        <!-- BACKDROP AND MODAL-->
+        <div class="backdrop"></div>
+        <div class="modal">
+            <!-- <div class="containerForm" id="form"> -->
+            <h4>Formulaire de contact</h4>
+
+            <input type="text" placeholder="Prénom" id="firstName" />
+            <input type="text" placeholder="Nom" id="lastName" />
+            <input type="email" placeholder="Email" id="email" />
+            <input type="text" placeholder="Sujet" id="message" />
+            <textarea placeholder="Ecrivez votre message ici..."></textarea>
+            <button class="container">Envoyer le message</button>
+            <!-- <input type="submit" value="Envoyer le message" /> -->
+            <!-- </div> -->
+        </div>
+
+        <div class="behindModal">
+            <!-- HEADER -->
+
+            <header class="container">
+                <div class="hidden"><i class="fas fa-bars"></i></div>
+
+                <img
+                    src="./Assets/img/Logo_TripAdvisor.svg"
+                    alt="Logo TrispAdvisor"
+                />
+                <div class="hidden"><i class="fas fa-search"></i></div>
+
+                <nav>
+                    <div><i class="fas fa-pen"></i><span>Avis</span></div>
+                    <div><i class="far fa-bell"></i><span>Alertes</span></div>
+                    <div><i class="far fa-heart"></i><span>Favoris</span></div>
+                    <button id="formButton">Connectez-vous</button>
+                </nav>
+            </header>
+
+            <!-- MAIN -->
+            <main class="container">
+                <!-- EXPLOREZ BELFAST -->
+                <h1><span>Explorez</span> <span class="city">Belfast</span></h1>
+
+                <!-- MENU -->
+
+                <div class="menu">
+                    <div><span>Hôtels</span> <i class="fas fa-bed"></i></div>
+
+                    <div class="resp">
+                        <span>Locations de vacances</span>
+                        <i class="fas fa-house-user"></i>
+                    </div>
+
+                    <div>
+                        <span>Activités</span>
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+
+                    <div>
+                        <span>Restaurants</span>
+                        <i class="fas fa-utensils"></i>
+                    </div>
+
+                    <div>
+                        <span>Forums de voyage</span>
+                        <i class="fas fa-book"></i>
+                    </div>
+
+                    <div><span>Vols</span> <i class="fas fa-plane"></i></div>
+
+                    <div class="hidden">
+                        <span>Croisières</span>
+                        <i class="fas fa-plane"></i>
+                    </div>
+
+                    <div>
+                        <span>Plus</span> <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+
+                <!-- 3 PICTURES -->
+                <div class="pictures">
+                    <!-- <img src="./Assets/img/belfast_picture1.jpeg" alt="" />
+                    <img src="./Assets/img/belfast_picture2.jpeg" alt="" />
+                    <img src="./Assets/img/belfast_picture3.jpeg" alt="" /> -->
+                    <div class="col-left"></div>
+                    <div class="col-right">
+                        <div class="up"></div>
+                        <div class="down"></div>
+                    </div>
+                </div>
+
+                <!-- LINKS SMALL DESCRIPTION -->
+                <div class="links">
+                    <!-- on peut remplacer div par nav: plus précis  -->
+                    <div>
+                        <a
+                            href="https://www.tripadvisor.fr/Tourism-g4-Europe-Vacations.html"
+                            target="_blank"
+                            >Europe</a
+                        >
+                        >
+                        <a
+                            href="https://www.tripadvisor.fr/Tourism-g186216-United_Kingdom-Vacations.html"
+                            target="_blank"
+                            >Royaume-Uni (UK)</a
+                        >
+                        >
+                        <a
+                            href="https://www.tripadvisor.fr/Tourism-g186469-Northern_Ireland-Vacations.html"
+                            target="_blank"
+                            >Irlande du Nord</a
+                        >
+                        >
+                        <a
+                            href="https://www.tripadvisor.fr/Tourism-g186470-Belfast_Northern_Ireland-Vacations.html"
+                            target="_blank"
+                            >Belfast</a
+                        ><a href=""></a>
+                    </div>
+                    <div>Visiter : Belfast</div>
+                </div>
+
+                <!-- INFO AND MAP -->
+                <section class="infoMap">
+                    <div class="block_left">
+                        <h2>Belfast: Informations</h2>
+                        <article>
+                            Avec une population de presque 300 000 habitants
+                            dans la ville proprement dite, Belfast est devenue
+                            une destination cosmopolite et un lieu très prisé le
+                            week-end. Ville dynamique balayée par un vent
+                            d'optimisme, Belfast est l'endroit parfait pour se
+                            revigorer. Grâce à ses nombreux circuits en bus, en
+                            taxi ou en bateau, il n'a jamais été aussi simple de
+                            visiter la capitale de l'Irlande du Nord. Sans
+                            oublier que l'on peut se déplacer partout à pied. À
+                            ne pas manquer : l'Ulster Folk Museum et la
+                            cathédrale. Et les restaurants primés, les bars, les
+                            clubs et les pubs, ainsi que les galeries et les
+                            théâtres sont incontournables !
+                        </article>
+                    </div>
+
+                    <div class="block_right">
+                        <div class="up">
+                            <h3>Belfast : commencez à organiser !</h3>
+                            <div>
+                                Créez un voyage pour enregistrer et organiser
+                                toutes vos idées et les visualiser sur une
+                                carte.
+                            </div>
+                            <button>Créez un voyage</button>
+                        </div>
+                        <div class="down"></div>
+                    </div>
+                </section>
+
+                <!-- IMMANQUABLES CARROUSEL  -->
+
+                <!-- <section class="Immanquables">
+                    <div class="line">
+                        <div class="col-left"></div>
+                        <div class="carrousel">
+                            <img src="" alt="" /><img src="" alt="" /><img
+                                src=""
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="col-left"></div>
+                        <div class="carrousel"></div>
+                    </div>
+                    <div class="line">
+                        <div class="col-left"></div>
+                        <div class="carrousel"></div>
+                    </div>
+                </section> -->
+            </main>
+        </div>
+        <footer></footer>
+    </body>
+</html>
