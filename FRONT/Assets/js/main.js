@@ -16,7 +16,7 @@ $.addEventListener("DOMContentLoaded", () => {
     $.querySelector("#headerButton").addEventListener("click", () => {
         console.log("click");
 
-        $.querySelector(".behindModal").style.display = "none";
+        // $.querySelector(".behindModal").style.display = "none";
         $.querySelector(".backdrop").style.display = "block";
         $.querySelector(".modal").style.display = "flex";
 
@@ -25,6 +25,7 @@ $.addEventListener("DOMContentLoaded", () => {
                 firstName: $.querySelector("#firstName").value,
                 lastName: $.querySelector("#lastName").value,
                 email: $.querySelector("#email").value,
+                subject: $.querySelector("#subject").value,
                 message: $.querySelector("#message").value,
             };
             console.log(data);
@@ -34,9 +35,10 @@ $.addEventListener("DOMContentLoaded", () => {
                 "http://localhost:3000/form",
                 data
             );
-            console.log(response);
-            alert("Merci :) \nVotre message a bien été envoyé");
+            if (response) alert("Merci :) \nVotre message a bien été envoyé");
+            // console.log(response);
         });
+
         $.querySelector(".backdrop").addEventListener("click", closeModal);
     });
 });

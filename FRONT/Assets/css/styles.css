@@ -13,7 +13,6 @@ body {
     max-width: 1180px;
     margin: 10px auto;
     padding: 10px;
-    /* overflow: hidden; */
 }
 
 .hidden {
@@ -97,6 +96,7 @@ h4 {
 
 .backdrop {
     position: fixed;
+    top: 0;
     display: none;
     width: 100%;
     height: 100%;
@@ -176,10 +176,6 @@ header button {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-/* .menu div i {
-    background-color: yellow;
-} */
 
 .menu .hidden {
     display: none;
