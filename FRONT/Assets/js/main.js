@@ -4,6 +4,12 @@ const $ = document;
 // var modal = $.querySelector(".modal");
 // var backdrop = $.querySelector(".backdrop");
 
+const closeModal = () => {
+    $.querySelector(".behindModal").style.display = "inherit";
+    $.querySelector(".backdrop").style.display = "none";
+    $.querySelector(".modal").style.display = "none";
+};
+
 $.addEventListener("DOMContentLoaded", () => {
     console.log("page chargée ");
 
@@ -22,22 +28,15 @@ $.addEventListener("DOMContentLoaded", () => {
                 message: $.querySelector("#message").value,
             };
             console.log(data);
+            closeModal();
 
-            $.querySelector(".behindModal").style.display = "inherit";
-            $.querySelector(".backdrop").style.display = "none";
-            $.querySelector(".modal").style.display = "none";
-
-            // const response = await axios.post(
-            //     "http://localhost:3000/form",
-            //     data
-            // );
-            // console.log(response);
-            // alert("Merci");
+            const response = await axios.post(
+                "http://localhost:3000/form",
+                data
+            );
+            console.log(response);
+            alert("Merci :) \nVotre message a bien été envoyé");
         });
-        $.querySelector(".backdrop").addEventListener("click", async () => {
-            $.querySelector(".behindModal").style.display = "inherit";
-            $.querySelector(".backdrop").style.display = "none";
-            $.querySelector(".modal").style.display = "none";
-        });
+        $.querySelector(".backdrop").addEventListener("click", closeModal);
     });
 });
